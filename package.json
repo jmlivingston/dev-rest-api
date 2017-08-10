@@ -1,0 +1,17 @@
+{
+  "name": "dev-rest-api",
+  "version": "1.0.0",
+  "description": "Use multiple files with json-server",
+  "scripts": {
+    "debug": "node build --apiDir=apis --dbFile=db.json | json-server --w db.json",
+    "start": "node serve",
+    "deploy": "git subtree push --prefix dist origin deploy-qa",
+    "postinstall": "npm install json-server yargs"
+  },
+  "dependencies": {
+    "json-server": "^0.12.0",
+    "yargs": "^8.0.2"
+  },
+  "author": "johnlivingston.io",
+  "license": "ISC"
+}
