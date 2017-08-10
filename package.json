@@ -5,7 +5,6 @@
   "scripts": {
     "debug": "node build --apiDir=apis --dbFile=db.json | json-server --w db.json",
     "start": "node serve",
-    "deploy": "git subtree push --prefix dist origin deploy-qa",
     "postinstall": "npm install json-server yargs"
   },
   "dependencies": {
